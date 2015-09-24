@@ -24,7 +24,26 @@
 
       ;; <<< BEGIN FILL ME IN >>>
 
- 
+      ;; Onyx function tasks require a :onyx/fn parameter to
+      ;; be defined, which is a keyword that maps to a namespace and var name
+      ;; The function's ns *must* be required onto the classpath before it is
+      ;; resolved. Unless otherwise specified, it should take exactly one
+      ;; parameter - a single segment.
+      {:onyx/name :times-three
+       :onyx/fn :workshop.challenge-2-1/times-three
+       :onyx/type :function
+       :onyx/batch-size batch-size
+       :onyx/batch-timeout batch-timeout
+       :onyx/doc "Multiplies :n in the segment by 3"}
+
+
+       {:onyx/name :plus-fifty
+        :onyx/fn :workshop.challenge-2-1/plus-fifty
+        :onyx/type :function
+        :onyx/batch-size batch-size
+        :onyx/batch-timeout batch-timeout
+        :onyx/doc "adds 50"}
+
       ;; <<< END FILL ME IN >>>
 
       {:onyx/name :write-segments

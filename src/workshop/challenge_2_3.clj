@@ -23,6 +23,12 @@
 
       ;; <<< BEGIN FILL ME IN >>>
 
+      {:onyx/name :identity
+       :onyx/fn :clojure.core/identity
+       :onyx/type :function
+       :onyx/batch-size batch-size
+       :onyx/batch-timeout batch-timeout}
+
       ;; <<< END FILL ME IN >>>
 
       {:onyx/name :write-segments
@@ -35,6 +41,8 @@
        :onyx/doc "Writes segments to a core.async channel"}]))
 
 ;;; Functions ;;;
+
+
 
 ;;; Lifecycles ;;;
 
