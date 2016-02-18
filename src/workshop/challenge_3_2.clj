@@ -42,7 +42,7 @@
 ;; <<< BEGIN FILL ME IN >>>
 
 (defn split-sentence [segment]
-  (update-in segment [:name] (clojure.string/split name #" ")))
+  (update-in segment [:sentence] #(clojure.string/split % #" ")))
 
 ;; <<< END FILL ME IN >>>
 
